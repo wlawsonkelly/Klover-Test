@@ -1,0 +1,24 @@
+PODS:
+  - SwiftConfettiView (0.1.0)
+  - SwiftFortuneWheel (1.4.0)
+  - SwiftLint (0.43.1)
+
+DEPENDENCIES:
+  - SwiftConfettiView
+  - SwiftFortuneWheel
+  - SwiftLint
+
+SPEC REPOS:
+  trunk:
+    - SwiftConfettiView
+    - SwiftFortuneWheel
+    - SwiftLint
+
+SPEC CHECKSUMS:
+  SwiftConfettiView: 1bdbc2e6913b6b1c76d8070802b212508ad5c352
+  SwiftFortuneWheel: 05c0e358b38bfb5b0c1ce3e92783b78cf9f2a2b1
+  SwiftLint: 99f82d07b837b942dd563c668de129a03fc3fb52
+
+PODFILE CHECKSUM: 5b9b4fd6d7a94637f80a5f6bb5235c6cc4c3c7b0
+
+COCOAPODS: 1.10.1

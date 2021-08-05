@@ -103,6 +103,28 @@ extension UIView {
     }
 }
 
+extension UIView {
+    var width: CGFloat {
+        frame.size.width
+    }
+    var height: CGFloat {
+        frame.size.height
+    }
+    var left: CGFloat {
+        frame.origin.x
+    }
+    var right: CGFloat {
+        left + width
+    }
+    var top: CGFloat {
+        frame.origin.y
+    }
+    var bottom: CGFloat {
+        top + height
+    }
+}
+
+
 private let circleStrokeWidth: CGFloat = 2
 private let blackColor = UIColor(white: 51.0 / 255.0, alpha: 1.0)
 private let redColor = UIColor.red

@@ -88,7 +88,13 @@ class WheelViewController: UIViewController {
             let randomInt = Int.random(in: 0..<slices.count)
             fortuneWheel.startRotationAnimation(finishIndex: randomInt, continuousRotationTime: 3, continuousRotationSpeed: 0.75) { [weak self] finished in
                 if finished {
+                    let generator = UINotificationFeedbackGenerator()
+                    generator.notificationOccurred(.success)
                     print("You won ", self?.sliceResponse[randomInt].displayText ?? "")
+                    let prizeView = PrizeView(frame: CGRect(x: 0, y: 0, width: self?.view.width ?? 0, height: (self?.view.width ?? 0 * 0.7) + 100))
+
+                    self?.view.addSubview(prizeView)
+                    prizeView.centerInSuperview()
                 }
             }
         }

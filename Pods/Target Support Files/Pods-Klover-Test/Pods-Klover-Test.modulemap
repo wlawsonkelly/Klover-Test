@@ -1,0 +1,6 @@
+framework module Pods_Klover_Test {
+  umbrella header "Pods-Klover-Test-umbrella.h"
+
+  export *
+  module * { export * }
+}
