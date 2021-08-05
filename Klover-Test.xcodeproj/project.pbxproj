@@ -3,27 +3,43 @@
 	archiveVersion = 1;
 	classes = {
 	};
-	objectVersion = 50;
+	objectVersion = 51;
 	objects = {
 
 /* Begin PBXBuildFile section */
+		0432D77D43E0D8271F00A176 /* Pods_Klover_Test.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D70E1F7E8707AFB3805C5763 /* Pods_Klover_Test.framework */; };
 		08F122DD26BACA44006B11F9 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 08F122DC26BACA44006B11F9 /* AppDelegate.swift */; };
 		08F122DF26BACA44006B11F9 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 08F122DE26BACA44006B11F9 /* SceneDelegate.swift */; };
-		08F122E126BACA44006B11F9 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 08F122E026BACA44006B11F9 /* ViewController.swift */; };
-		08F122E426BACA44006B11F9 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 08F122E226BACA44006B11F9 /* Main.storyboard */; };
+		08F122E126BACA44006B11F9 /* MainViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 08F122E026BACA44006B11F9 /* MainViewController.swift */; };
 		08F122E626BACA45006B11F9 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 08F122E526BACA45006B11F9 /* Assets.xcassets */; };
 		08F122E926BACA45006B11F9 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 08F122E726BACA45006B11F9 /* LaunchScreen.storyboard */; };
+		08F122F426BACBC4006B11F9 /* Constants.swift in Sources */ = {isa = PBXBuildFile; fileRef = 08F122F326BACBC4006B11F9 /* Constants.swift */; };
+		08F122F726BACD4B006B11F9 /* Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 08F122F626BACD4B006B11F9 /* Extension.swift */; };
+		08F122F926BAD4A7006B11F9 /* WheelViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 08F122F826BAD4A7006B11F9 /* WheelViewController.swift */; };
+		08F122FB26BAD5F0006B11F9 /* SliceResponse.swift in Sources */ = {isa = PBXBuildFile; fileRef = 08F122FA26BAD5F0006B11F9 /* SliceResponse.swift */; };
+		08F122FD26BAD643006B11F9 /* APICaller.swift in Sources */ = {isa = PBXBuildFile; fileRef = 08F122FC26BAD643006B11F9 /* APICaller.swift */; };
+		08F122FF26BADB6E006B11F9 /* wheel_ticker.png in Resources */ = {isa = PBXBuildFile; fileRef = 08F122FE26BADB6E006B11F9 /* wheel_ticker.png */; };
+		08F1230126BADC00006B11F9 /* WheelView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 08F1230026BADC00006B11F9 /* WheelView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
 		08F122D926BACA44006B11F9 /* Klover-Test.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Klover-Test.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		08F122DC26BACA44006B11F9 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		08F122DE26BACA44006B11F9 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
-		08F122E026BACA44006B11F9 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
-		08F122E326BACA44006B11F9 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		08F122E026BACA44006B11F9 /* MainViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainViewController.swift; sourceTree = "<group>"; };
 		08F122E526BACA45006B11F9 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		08F122E826BACA45006B11F9 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		08F122EA26BACA45006B11F9 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		08F122F326BACBC4006B11F9 /* Constants.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Constants.swift; sourceTree = "<group>"; };
+		08F122F626BACD4B006B11F9 /* Extension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Extension.swift; sourceTree = "<group>"; };
+		08F122F826BAD4A7006B11F9 /* WheelViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WheelViewController.swift; sourceTree = "<group>"; };
+		08F122FA26BAD5F0006B11F9 /* SliceResponse.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SliceResponse.swift; sourceTree = "<group>"; };
+		08F122FC26BAD643006B11F9 /* APICaller.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = APICaller.swift; sourceTree = "<group>"; };
+		08F122FE26BADB6E006B11F9 /* wheel_ticker.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = wheel_ticker.png; sourceTree = "<group>"; };
+		08F1230026BADC00006B11F9 /* WheelView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WheelView.swift; sourceTree = "<group>"; };
+		1B7FCA94FF8F7108972454DE /* Pods-Klover-Test.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Klover-Test.release.xcconfig"; path = "Target Support Files/Pods-Klover-Test/Pods-Klover-Test.release.xcconfig"; sourceTree = "<group>"; };
+		60F9B08F1009EE333904F7AE /* Pods-Klover-Test.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Klover-Test.debug.xcconfig"; path = "Target Support Files/Pods-Klover-Test/Pods-Klover-Test.debug.xcconfig"; sourceTree = "<group>"; };
+		D70E1F7E8707AFB3805C5763 /* Pods_Klover_Test.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Klover_Test.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -31,6 +47,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				0432D77D43E0D8271F00A176 /* Pods_Klover_Test.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -42,6 +59,8 @@
 			children = (
 				08F122DB26BACA44006B11F9 /* Klover-Test */,
 				08F122DA26BACA44006B11F9 /* Products */,
+				FEC1DD8C8EFE2CD61BE08F71 /* Pods */,
+				15C2FFA9A1DFBF1E17F0AC4B /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -56,15 +75,70 @@
 		08F122DB26BACA44006B11F9 /* Klover-Test */ = {
 			isa = PBXGroup;
 			children = (
+				08F122F526BACD35006B11F9 /* Extensions */,
+				08F122F226BACB9B006B11F9 /* Controllers */,
+				08F122F126BACB95006B11F9 /* Models */,
+				08F122F026BACB8C006B11F9 /* Views */,
 				08F122DC26BACA44006B11F9 /* AppDelegate.swift */,
 				08F122DE26BACA44006B11F9 /* SceneDelegate.swift */,
-				08F122E026BACA44006B11F9 /* ViewController.swift */,
-				08F122E226BACA44006B11F9 /* Main.storyboard */,
 				08F122E526BACA45006B11F9 /* Assets.xcassets */,
 				08F122E726BACA45006B11F9 /* LaunchScreen.storyboard */,
 				08F122EA26BACA45006B11F9 /* Info.plist */,
+				08F122FE26BADB6E006B11F9 /* wheel_ticker.png */,
+				08F122F326BACBC4006B11F9 /* Constants.swift */,
+				08F122FC26BAD643006B11F9 /* APICaller.swift */,
 			);
 			path = "Klover-Test";
+			sourceTree = "<group>";
+		};
+		08F122F026BACB8C006B11F9 /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				08F1230026BADC00006B11F9 /* WheelView.swift */,
+			);
+			path = Views;
+			sourceTree = "<group>";
+		};
+		08F122F126BACB95006B11F9 /* Models */ = {
+			isa = PBXGroup;
+			children = (
+				08F122FA26BAD5F0006B11F9 /* SliceResponse.swift */,
+			);
+			path = Models;
+			sourceTree = "<group>";
+		};
+		08F122F226BACB9B006B11F9 /* Controllers */ = {
+			isa = PBXGroup;
+			children = (
+				08F122E026BACA44006B11F9 /* MainViewController.swift */,
+				08F122F826BAD4A7006B11F9 /* WheelViewController.swift */,
+			);
+			path = Controllers;
+			sourceTree = "<group>";
+		};
+		08F122F526BACD35006B11F9 /* Extensions */ = {
+			isa = PBXGroup;
+			children = (
+				08F122F626BACD4B006B11F9 /* Extension.swift */,
+			);
+			path = Extensions;
+			sourceTree = "<group>";
+		};
+		15C2FFA9A1DFBF1E17F0AC4B /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				D70E1F7E8707AFB3805C5763 /* Pods_Klover_Test.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		FEC1DD8C8EFE2CD61BE08F71 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				60F9B08F1009EE333904F7AE /* Pods-Klover-Test.debug.xcconfig */,
+				1B7FCA94FF8F7108972454DE /* Pods-Klover-Test.release.xcconfig */,
+			);
+			path = Pods;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -74,9 +148,11 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 08F122ED26BACA45006B11F9 /* Build configuration list for PBXNativeTarget "Klover-Test" */;
 			buildPhases = (
+				78CEC39ADF2E8D4D3D84B790 /* [CP] Check Pods Manifest.lock */,
 				08F122D526BACA44006B11F9 /* Sources */,
 				08F122D626BACA44006B11F9 /* Frameworks */,
 				08F122D726BACA44006B11F9 /* Resources */,
+				CD72CF53FB31BDE20F2D7E66 /* [CP] Embed Pods Frameworks */,
 			);
 			buildRules = (
 			);
@@ -126,34 +202,74 @@
 			files = (
 				08F122E926BACA45006B11F9 /* LaunchScreen.storyboard in Resources */,
 				08F122E626BACA45006B11F9 /* Assets.xcassets in Resources */,
-				08F122E426BACA44006B11F9 /* Main.storyboard in Resources */,
+				08F122FF26BADB6E006B11F9 /* wheel_ticker.png in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		78CEC39ADF2E8D4D3D84B790 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-Klover-Test-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		CD72CF53FB31BDE20F2D7E66 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-Klover-Test/Pods-Klover-Test-frameworks-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-Klover-Test/Pods-Klover-Test-frameworks-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-Klover-Test/Pods-Klover-Test-frameworks.sh\"\n#\"${PODS_ROOT}/SwiftLint/swiftlint\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
 		08F122D526BACA44006B11F9 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				08F122E126BACA44006B11F9 /* ViewController.swift in Sources */,
+				08F122F726BACD4B006B11F9 /* Extension.swift in Sources */,
+				08F122E126BACA44006B11F9 /* MainViewController.swift in Sources */,
+				08F122F926BAD4A7006B11F9 /* WheelViewController.swift in Sources */,
+				08F122FB26BAD5F0006B11F9 /* SliceResponse.swift in Sources */,
 				08F122DD26BACA44006B11F9 /* AppDelegate.swift in Sources */,
 				08F122DF26BACA44006B11F9 /* SceneDelegate.swift in Sources */,
+				08F1230126BADC00006B11F9 /* WheelView.swift in Sources */,
+				08F122F426BACBC4006B11F9 /* Constants.swift in Sources */,
+				08F122FD26BAD643006B11F9 /* APICaller.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXSourcesBuildPhase section */
 
 /* Begin PBXVariantGroup section */
-		08F122E226BACA44006B11F9 /* Main.storyboard */ = {
-			isa = PBXVariantGroup;
-			children = (
-				08F122E326BACA44006B11F9 /* Base */,
-			);
-			name = Main.storyboard;
-			sourceTree = "<group>";
-		};
 		08F122E726BACA45006B11F9 /* LaunchScreen.storyboard */ = {
 			isa = PBXVariantGroup;
 			children = (
@@ -283,6 +399,7 @@
 		};
 		08F122EE26BACA45006B11F9 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 60F9B08F1009EE333904F7AE /* Pods-Klover-Test.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
@@ -302,6 +419,7 @@
 		};
 		08F122EF26BACA45006B11F9 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 1B7FCA94FF8F7108972454DE /* Pods-Klover-Test.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
