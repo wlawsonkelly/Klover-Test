@@ -53,7 +53,7 @@ class WheelViewController: UIViewController {
 
     fileprivate func setUpSlices(response: [SliceResponse]) {
         for item in response {
-            let headerContent = Slice.ContentType.text(text: "\(item.displayText)", preferences: .withoutStoryboardExampleAmountTextPreferences)
+            let headerContent = Slice.ContentType.text(text: "\(item.displayText)", preferences: .textPreferences)
             let slice = Slice(contents: [headerContent])
             slices.append(slice)
         }
@@ -63,7 +63,7 @@ class WheelViewController: UIViewController {
     fileprivate func createWheel(slices: [Slice]) {
         DispatchQueue.main.async {
             let frame = CGRect(x: 35, y: 100, width: 300, height: 300)
-            let fortuneWheel = SwiftFortuneWheel(frame: frame, slices: slices, configuration: .withoutStoryboardExampleConfiguration)
+            let fortuneWheel = SwiftFortuneWheel(frame: frame, slices: slices, configuration: .sfwConfiguration)
             self.fortuneWheel = fortuneWheel
             self.layoutWheel()
         }

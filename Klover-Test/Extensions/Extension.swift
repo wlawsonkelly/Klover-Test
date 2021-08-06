@@ -130,7 +130,7 @@ private let blackColor = UIColor(white: 51.0 / 255.0, alpha: 1.0)
 private let redColor = UIColor.red
 
 public extension SFWConfiguration {
-    static var withoutStoryboardExampleConfiguration: SFWConfiguration {
+    static var sfwConfiguration: SFWConfiguration {
 
         let _position: SFWConfiguration.Position = .top
 
@@ -160,7 +160,7 @@ public extension SFWConfiguration {
 }
 
 public extension TextPreferences {
-    static var withoutStoryboardExampleAmountTextPreferences: TextPreferences {
+    static var textPreferences: TextPreferences {
         let textColorType = SFWConfiguration.ColorType.customPatternColors(colors: nil, defaultColor: .white)
         let font = UIFont.systemFont(ofSize: 22, weight: .bold)
         let prefenreces = TextPreferences(
