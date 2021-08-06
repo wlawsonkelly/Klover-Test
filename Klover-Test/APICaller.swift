@@ -10,9 +10,7 @@ import Foundation
 final class APICaller {
     static let shared = APICaller()
 
-    private struct Constants {
-        static let url = "http://mockbin.org/bin/dc24c4de-102f-49bf-9c80-9ed52d4ea7f6?"
-    }
+    private let url = "http://mockbin.org/bin/dc24c4de-102f-49bf-9c80-9ed52d4ea7f6?"
 
     private init() {}
 
@@ -24,7 +22,7 @@ final class APICaller {
     public func getSliceInfo(
         completion: @escaping (Result<[SliceResponse], Error>) -> Void
     ) {
-        let url = URL(string: Constants.url)
+        let url = URL(string: url)
 
         request(url: url, expecting: [SliceResponse].self,
                 completion: completion)
