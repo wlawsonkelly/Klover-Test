@@ -7,11 +7,14 @@
 
 import UIKit
 import SwiftFortuneWheel
+import SwiftConfettiView
 
 class WheelViewController: UIViewController {
     var slices: [Slice] = []
     var sliceResponse: [SliceResponse] = []
     var fortuneWheel: SwiftFortuneWheel?
+    var confettiView: SwiftConfettiView?
+    var prizeView: PrizeView?
 
     let spinButton: UIButton = {
         let button = UIButton(type: .system)
@@ -83,6 +86,25 @@ class WheelViewController: UIViewController {
         }
     }
 
+    fileprivate func setupPrizeView(amount: String, currency: String) {
+        let prizeView = PrizeView(frame: CGRect(x: view.width/2 - ((view.width - 80)/2), y: view.height/2 - view.height/8, width: view.width - 80, height: view.height/4))
+        self.prizeView = prizeView
+        prizeView.centerInSuperview()
+        prizeView.prizeLabel.text = "CONGRATS YOU HAVE WON BIG. YOU WON \(amount) \(currency)"
+        prizeView.doneButton.addTarget(self, action: #selector(stopAnimating), for: .touchUpInside)
+        self.view.addSubview(prizeView)
+        spinButton.isHidden = true
+    }
+
+    fileprivate func setupConfetiView() {
+        let confettiView = SwiftConfettiView(frame: self.view.bounds)
+        view.addSubview(confettiView)
+        self.confettiView = confettiView
+        confettiView.intensity = 0.8
+        confettiView.type = .star
+        confettiView.startConfetti()
+    }
+
     @objc fileprivate func handleSpin() {
         if let fortuneWheel = fortuneWheel {
             let randomInt = Int.random(in: 0..<slices.count)
@@ -90,13 +112,17 @@ class WheelViewController: UIViewController {
                 if finished {
                     let generator = UINotificationFeedbackGenerator()
                     generator.notificationOccurred(.success)
-                    print("You won ", self?.sliceResponse[randomInt].displayText ?? "")
-                    let prizeView = PrizeView(frame: CGRect(x: 0, y: 0, width: self?.view.width ?? 0, height: (self?.view.width ?? 0 * 0.7) + 100))
-
-                    self?.view.addSubview(prizeView)
-                    prizeView.centerInSuperview()
+                    self?.setupConfetiView()
+                    self?.setupPrizeView(amount: self?.sliceResponse[randomInt].displayText ?? "", currency: self?.sliceResponse[randomInt].currency ?? "")
                 }
             }
         }
+    }
+
+    @objc fileprivate func stopAnimating() {
+        self.confettiView?.stopConfetti()
+        spinButton.isHidden = false
+        self.prizeView?.removeFromSuperview()
+        self.confettiView?.removeFromSuperview()
     }
 }
