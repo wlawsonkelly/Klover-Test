@@ -33,8 +33,9 @@ class WheelViewController: UIViewController {
         super.viewDidLoad()
         navigationItem.title = "Spin the Wheel"
         view.backgroundColor = Constants.Colors.gameBackgroundColor
+        spinButton.sizeToFit()
+        spinButton.frame = CGRect(x: view.width/2 - 50, y: view.height - 64, width: 100, height: spinButton.height)
         view.addSubview(spinButton)
-        spinButton.anchor(top: nil, leading: view.leadingAnchor, bottom: view.bottomAnchor, trailing: view.trailingAnchor, padding: .init(top: 0, left: 124, bottom: 44, right: 124))
         getSliceData()
     }
 
